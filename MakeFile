@@ -1,0 +1,7 @@
+本项目是vue + elementUI的框架模板
+基础框架基于 (https://github.com/PanJiaChen/vue-admin-template.git)进行修改.
+
+1.基础框架样式
+2.手机端自适应
+3.权限控制
+4.axios请求数据

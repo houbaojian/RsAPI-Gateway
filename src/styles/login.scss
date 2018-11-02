@@ -1,0 +1,80 @@
+.login-container{
+  position: fixed;
+  height: 100%;
+  width:100%;
+  .logo{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    z-index: 10;
+    img{
+      height: auto;
+    }
+  }
+  .introduce{
+    height: 100%;
+    width: 70%;
+    float: left;
+  }
+  .content{
+    height: 100%;
+    width: 30%;
+    float: left;
+    .form{
+      width: 100%;
+      padding: 0 3em;
+      max-width: 450px;
+      margin: 0 auto;
+      h1{
+        font-size: 30px;
+        font-weight: 300;
+        color: #4e5a64;
+        margin: 0.67em 0;
+      }
+      .show-pwd{
+        position: absolute;
+        right: 1.5em;
+        top: 0.7em;
+        font-size: 16px;
+        cursor: pointer;
+        user-select:none;
+      }
+      .link{
+        margin: 1.5em 0;
+        line-height: 26px;
+        margin-bottom: 20px;
+        text-align: right;
+        color: $DefaultColor;
+      }
+    }
+  }
+}
+
+.mobile {
+  .login-container {
+    .logo{
+      img{
+        height: 20px;
+      }
+    }
+    .introduce{
+      width: 100%;
+    }
+    .content{
+      position: absolute;
+      width: 100%;
+      padding: 0px 2em;
+      z-index: 20;
+      .form{
+        background-color: rgba(255,255,255,.8);
+        padding: 2em;
+        h1{
+          text-align: center;
+        }
+        input{
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}

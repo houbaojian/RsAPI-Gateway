@@ -1,0 +1,82 @@
+@charset "utf-8";
+ //to reset element-ui default css
+.el-upload {
+  input[type="file"] {
+    display: none !important;
+  }
+}
+
+.el-upload__input {
+  display: none;
+}
+
+//暂时性解决diolag 问题 https://github.com/ElemeFE/element/issues/2461
+.el-dialog {
+  transform: none;
+  left: 0;
+  position: relative;
+  margin: 0 auto;
+}
+
+//element ui upload
+.upload-container {
+  .el-upload {
+    width: 100%;
+    .el-upload-dragger {
+      width: 100%;
+      height: 200px;
+    }
+  }
+}
+
+
+
+ button{
+   border-radius: 0px !important;
+ }
+
+ .page-sidebar{
+   .el-menu{
+     .el-menu-item.is-active{
+       border-left: 3px solid $DefaultColor !important;
+       margin-left: -3px;
+     }
+   }
+ }
+
+ .form-container{
+   .el-form{
+     .el-form-item:first-child{
+       overflow: hidden;
+     }
+   }
+ }
+
+ //element ui carousel
+ .login-container{
+   .carousel-container{
+     width: 100%;
+     height: 100%;
+     .el-carousel{
+       height: 100%;
+       .el-carousel__container{
+         height: 100%;
+       }
+     }
+   }
+   input{
+     border: #a0a9b4 !important;
+     border-bottom: 1px solid #a0a9b4!important;
+     padding: 0 !important;
+     margin-bottom: 5px !important;
+     margin-top: 10px !important;
+     border-radius: 0px;
+     -webkit-appearance:none !important;
+   }
+ }
+
+ .mobile{
+   .el-checkbox+.el-checkbox{
+     margin-left: 0px;
+   }
+ }
